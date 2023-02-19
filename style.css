@@ -1,0 +1,60 @@
+/* 타이핑 효과 랜딩 페이지 만들기 / 실습 / 웹 코딩 */
+
+/* 전체 선택 * */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslateblue;
+}
+
+/* wrap 이라는 클래스 요소는 항상 수직, 수평 중앙에 위치하는 코드 */
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  /* 마치 텍스트가 중앙정렬 된 것 처럼 아이콘도 중앙정렬 되게 된 것 */
+}
+
+.material-symbols-outlined {
+  font-size: 10rem;
+}
+
+.lg-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sm-text {
+  font-size: 1.5rem;
+}
+
+#dynamic {
+  position: relative;
+  display: inline-block;
+}
+
+/* 이 컨텐츠 디스플레이 속성으로 이렇게 가상요소를 만들 수 있다. (커서) */
+#dynamic::after {
+  content: "";
+  /* 비어있는 컨텐츠로 만들어주기 */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+/* #dynamic.active::after {
+  /* display: none; */
+/* 일시적으로 웹페이지에서 감춰지게끔 */
+/* } */

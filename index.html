@@ -1,0 +1,33 @@
+<!-- 타이핑 효과 랜딩 페이지 만들기 / 실습 / 웹 코딩 -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Text</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>
+      <span class="material-symbols-outlined">language</span>
+    </h1>
+    <p id="dynamic" class="lg-text active">
+      <!-- CSS에서 active가 있으면 사라지게끔 해서 사라지는 것임 -->
+      <!-- 이런 식으로 없어졌다, 사라졌다 하는건 HTML + CSS 가 할 수 없는 부분이라 JS 가 해야함 -->
+      <!-- Learn to CAP 이렇게 기존 글자를 지우면 빠진 L만 화면에 출력되고, 이 빠진 배열은 콘솔에 다시 생성된다. -->
+    </p>
+    <p class="sm-text">
+      CAPVITAL | 100,000,000 Subscribe
+    </p>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
